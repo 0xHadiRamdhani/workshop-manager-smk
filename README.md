@@ -207,10 +207,9 @@ Proyek ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) unt
 
 ## Kontak
 
-- **Email**: workshop@smk.ac.id
-- **Phone**: +62 xxx xxxx xxxx
-- **Website**: https://smk-workshop.ac.id
-- **Support**: support@smk-workshop.ac.id
+- **Email**: yayasanbanimasum@gmail.com
+- **Phone**: 082126608497
+- **Website**: https://banimasum.com/
 
 ## Acknowledgments
 
