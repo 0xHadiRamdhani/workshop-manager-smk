@@ -200,10 +200,10 @@ Proyek ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) unt
 
 ## Tim Pengembang
 
-- **Lead Developer**: [Nama Anda]
-- **UI/UX Designer**: [Nama Designer]
-- **Backend Developer**: [Nama Backend Dev]
-- **QA Engineer**: [Nama QA]
+- **Lead Developer**: Hadi Ramdhani
+- **UI/UX Designer**: Hadi Ramdhani
+- **Backend Developer**: Hadi Ramdhani
+- **QA Engineer**: Hadi Ramdhani
 
 ## Kontak
 
