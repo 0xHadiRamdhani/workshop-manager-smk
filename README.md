@@ -213,7 +213,7 @@ Proyek ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) unt
 
 ## Acknowledgments
 
-- SMK Negeri [Nama Sekolah] untuk support dan testing
+- SMK Bani Ma'sum untuk support dan testing
 - Dinas Pendidikan untuk kurikulum SMK
 - Industri mitra untuk case study
 - Komunitas React Native Indonesia
