@@ -2,69 +2,69 @@
 
 Aplikasi manajemen workshop untuk sekolah SMK dengan 10+ fitur inovatif yang dirancang khusus untuk meningkatkan efisiensi dan efektivitas pembelajaran praktik.
 
-## 🚀 Fitur Utama
+## Fitur Utama
 
-### 1. **Dashboard Analitik Komprehensif**
-- 📊 Statistik real-time siswa, proyek, dan layanan
-- 📈 Grafik progress dan performa
-- 🔔 Notifikasi terbaru dan alert system
-- 📅 Ringkasan aktivitas harian
+### 1. Dashboard Analitik Komprehensif
+- Statistik real-time siswa, proyek, dan layanan
+- Grafik progress dan performa
+- Notifikasi terbaru dan alert system
+- Ringkasan aktivitas harian
 
-### 2. **Modul Pembelajaran Interaktif**
-- 📚 Kurikulum SMK terintegrasi
-- 🥽 Simulasi AR/VR untuk praktik virtual
-- 📖 Materi pembelajaran multimedia
-- 🎯 Assessment dan evaluasi otomatis
+### 2. Modul Pembelajaran Interaktif
+- Kurikulum SMK terintegrasi
+- Simulasi AR/VR untuk praktik virtual
+- Materi pembelajaran multimedia
+- Assessment dan evaluasi otomatis
 
-### 3. **Tracking Service Real-time**
-- 📱 QR Code scanner untuk tracking kendaraan
-- ⏱️ Update status service secara real-time
-- 📋 Histori service lengkap
-- 🔔 Notifikasi progress service
+### 3. Tracking Service Real-time
+- QR Code scanner untuk tracking kendaraan
+- Update status service secara real-time
+- Histori service lengkap
+- Notifikasi progress service
 
-### 4. **Manajemen Inventory Suku Cadang**
-- 📦 Stok management otomatis
-- ⚠️ Alert system untuk stok minimum
-- 📊 Analisis penggunaan parts
-- 🔄 Reorder otomatis ke supplier
+### 4. Manajemen Inventory Suku Cadang
+- Stok management otomatis
+- Alert system untuk stok minimum
+- Analisis penggunaan parts
+- Reorder otomatis ke supplier
 
-### 5. **Penjadwalan Mentor Dinamis**
-- 📅 Kalender interaktif untuk jadwal mentor
-- 🕐 Booking system online
-- 👥 Manajemen kapasitas siswa
-- 📧 Notifikasi reminder otomatis
+### 5. Penjadwalan Mentor Dinamis
+- Kalender interaktif untuk jadwal mentor
+- Booking system online
+- Manajemen kapasitas siswa
+- Notifikasi reminder otomatis
 
-### 6. **Sistem Pelaporan Real-time**
-- 📄 Laporan harian/mingguan/bulanan
-- 📊 Analisis performa siswa
-- 📈 Grafik progress pembelajaran
-- 📤 Export ke PDF/Excel
+### 6. Sistem Pelaporan Real-time
+- Laporan harian/mingguan/bulanan
+- Analisis performa siswa
+- Grafik progress pembelajaran
+- Export ke PDF/Excel
 
-### 7. **Integrasi Kurikulum SMK**
-- 📋 Standar kompetensi SMK
-- 🎯 Penilaian berbasis kompetensi
-- 📊 Mapping skill dan progress
-- 🏆 Sertifikasi otomatis
+### 7. Integrasi Kurikulum SMK
+- Standar kompetensi SMK
+- Penilaian berbasis kompetensi
+- Mapping skill dan progress
+- Sertifikasi otomatis
 
-### 8. **Sistem Absensi Digital**
-- 📱 QR Code untuk absensi
-- ⏰ Real-time attendance tracking
-- 📊 Statistik kehadiran
-- 🔄 Integrasi dengan jadwal
+### 8. Sistem Absensi Digital
+- QR Code untuk absensi
+- Real-time attendance tracking
+- Statistik kehadiran
+- Integrasi dengan jadwal
 
-### 9. **Kolaborasi Siswa-Mentor**
-- 💬 Chat dan messaging system
-- 📹 Video call untuk konsultasi
-- 🗂️ File sharing untuk dokumen
-- 👥 Group collaboration tools
+### 9. Kolaborasi Siswa-Mentor
+- Chat dan messaging system
+- Video call untuk konsultasi
+- File sharing untuk dokumen
+- Group collaboration tools
 
-### 10. **Manajemen Proyek Berbasis Scrum**
-- 📋 Scrum board interaktif
-- 🔄 Sprint planning dan tracking
-- 📊 Burndown chart
-- 📝 Retrospective tools
+### 10. Manajemen Proyek Berbasis Scrum
+- Scrum board interaktif
+- Sprint planning dan tracking
+- Burndown chart
+- Retrospective tools
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 - **Framework**: React Native dengan Expo
 - **Navigation**: Expo Router
@@ -76,7 +76,7 @@ Aplikasi manajemen workshop untuk sekolah SMK dengan 10+ fitur inovatif yang dir
 - **Charts**: react-native-chart-kit
 - **Video**: react-native-video
 
-## 📱 Instalasi dan Setup
+## Instalasi dan Setup
 
 ### Prasyarat
 - Node.js (versi 16 atau lebih baru)
@@ -114,7 +114,7 @@ expo start
 
 5. **Scan QR Code** dengan Expo Go app di device Anda
 
-## 🚀 Menjalankan Aplikasi
+## Menjalankan Aplikasi
 
 ### Development Mode
 ```bash
@@ -135,7 +135,7 @@ expo build:ios
 npm test
 ```
 
-## 📁 Struktur Proyek
+## Struktur Proyek
 
 ```
 workshop-manager-smk/
@@ -163,41 +163,7 @@ workshop-manager-smk/
 └── assets/               # Static assets
 ```
 
-## 🎯 Fitur Khusus untuk SMK
-
-### Kurikulum Terintegrasi
-- Standar Kompetensi Keahlian (SKK)
-- Kompetensi Inti dan Kompetensi Dasar
-- Penilaian berbasis kompetensi
-- Sertifikasi digital
-
-### Praktik Industri
-- Simulasi workshop nyata
-- Case study dari industri
-- Project-based learning
-- Assessment praktik
-
-### Monitoring dan Evaluasi
-- Progress tracking siswa
-- Laporan untuk guru dan pembimbing
-- Analisis performa kelas
-- Rekomendasi perbaikan
-
-## 🔧 Konfigurasi
-
-### Environment Variables
-```env
-EXPO_PUBLIC_API_URL=your-api-url
-EXPO_PUBLIC_NOTIFICATION_KEY=your-notification-key
-```
-
-### Customization
-- Warna tema: `src/theme/colors.ts`
-- Komponen UI: `src/components/ui/`
-- State management: `src/store/index.ts`
-- Types: `src/types/index.ts`
-
-## 📊 Performa dan Optimasi
+## Performa dan Optimasi
 
 - **Code Splitting**: Lazy loading untuk modul besar
 - **Image Optimization**: Kompressi otomatis untuk gambar
@@ -205,7 +171,7 @@ EXPO_PUBLIC_NOTIFICATION_KEY=your-notification-key
 - **Navigation**: Expo Router untuk navigasi cepat
 - **Caching**: Local storage untuk data offline
 
-## 🔒 Keamanan
+## Keamanan
 
 - Enkripsi data sensitif
 - Validasi input lengkap
@@ -213,14 +179,14 @@ EXPO_PUBLIC_NOTIFICATION_KEY=your-notification-key
 - Authentication system
 - Role-based access control
 
-## 📱 Kompatibilitas
+## Kompatibilitas
 
 - **iOS**: iOS 11.0+
 - **Android**: Android 5.0+ (API level 21+)
 - **Web**: Modern browsers
 - **Tablet**: Fully responsive
 
-## 🤝 Kontribusi
+## Kontribusi
 
 1. Fork repository
 2. Buat branch fitur (`git checkout -b feature/AmazingFeature`)
@@ -228,25 +194,25 @@ EXPO_PUBLIC_NOTIFICATION_KEY=your-notification-key
 4. Push ke branch (`git push origin feature/AmazingFeature`)
 5. Buat Pull Request
 
-## 📄 Lisensi
+## Lisensi
 
 Proyek ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) untuk detail.
 
-## 👥 Tim Pengembang
+## Tim Pengembang
 
 - **Lead Developer**: [Nama Anda]
 - **UI/UX Designer**: [Nama Designer]
 - **Backend Developer**: [Nama Backend Dev]
 - **QA Engineer**: [Nama QA]
 
-## 📞 Kontak
+## Kontak
 
 - **Email**: workshop@smk.ac.id
 - **Phone**: +62 xxx xxxx xxxx
 - **Website**: https://smk-workshop.ac.id
 - **Support**: support@smk-workshop.ac.id
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - SMK Negeri [Nama Sekolah] untuk support dan testing
 - Dinas Pendidikan untuk kurikulum SMK
@@ -255,6 +221,6 @@ Proyek ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) unt
 
 ---
 
-**⭐ Jika proyek ini bermanfaat, jangan lupa untuk memberikan bintang!**
+**Jika proyek ini bermanfaat, jangan lupa untuk memberikan bintang!**
 
-Made with ❤️ untuk pendidikan SMK di Indonesia
+Made dengan cinta untuk pendidikan SMK di Indonesia
