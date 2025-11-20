@@ -32,8 +32,8 @@ export default function CollaborationScreen() {
             senderId: currentUser?.id || 'user-1',
             receiverId: selectedUser,
             message: messageText,
-            timestamp: new Date().toISOString(),
-            type: 'text',
+            timestamp: new Date(),
+            type: 'text' as const,
             read: false,
         };
 

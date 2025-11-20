@@ -12,9 +12,12 @@ export default function AttendanceScreen() {
 
     useEffect(() => {
         // Check today's attendance
-        const today = new Date().toISOString().split('T')[0];
+        const today = new Date();
         const todayRecord = attendance.find(
-            (record: any) => record.studentId === currentUser?.id && record.date.startsWith(today)
+            (record: any) => record.studentId === currentUser?.id &&
+                record.date.getDate() === today.getDate() &&
+                record.date.getMonth() === today.getMonth() &&
+                record.date.getFullYear() === today.getFullYear()
         );
         setTodayAttendance(todayRecord);
     }, [attendance, currentUser]);
@@ -27,9 +30,9 @@ export default function AttendanceScreen() {
             const newAttendance = {
                 id: Date.now().toString(),
                 studentId: currentUser?.id || 'student-1',
-                date: new Date().toISOString(),
-                status: 'present',
-                checkInTime: new Date().toISOString(),
+                date: new Date(),
+                status: 'present' as const,
+                checkInTime: new Date(),
                 qrCode: 'QR-' + Date.now(),
             };
             addAttendance(newAttendance);

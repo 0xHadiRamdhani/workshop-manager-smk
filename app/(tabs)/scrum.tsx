@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Text } from '@/components/ui/Text';
 import { useStore } from '@/src/store';
+import { Task } from '@/src/types';
 import React, { useState } from 'react';
 import { Alert, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 
@@ -50,14 +51,14 @@ export default function ScrumScreen() {
             return;
         }
 
-        const newTask = {
+        const newTask: Task = {
             id: Date.now().toString(),
             title: newTaskTitle,
             description: newTaskDescription,
             status: 'todo',
             assignee: newTaskAssignee,
             priority: 'medium',
-            dueDate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
+            dueDate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
             estimatedHours: 4,
         };
 
@@ -76,10 +77,10 @@ export default function ScrumScreen() {
         Alert.alert('Sukses', 'Task berhasil dibuat!');
     };
 
-    const handleUpdateTaskStatus = (taskId: string, newStatus: string) => {
+    const handleUpdateTaskStatus = (taskId: string, newStatus: Task['status']) => {
         if (!currentProject) return;
 
-        const updatedTasks = currentProject.tasks.map((task: any) =>
+        const updatedTasks = currentProject.tasks.map((task: Task) =>
             task.id === taskId ? { ...task, status: newStatus } : task
         );
 
@@ -144,13 +145,13 @@ export default function ScrumScreen() {
                         <Card style={styles.card}>
                             <Text style={styles.cardTitle}>Scrum Board</Text>
                             <View style={styles.boardColumns}>
-                                {['todo', 'in-progress', 'review', 'done'].map((status) => (
+                                {(['todo', 'in-progress', 'review', 'done'] as Task['status'][]).map((status) => (
                                     <View key={status} style={styles.column}>
                                         <Text style={styles.columnTitle}>{getTaskStatusText(status)}</Text>
                                         <View style={styles.taskList}>
                                             {currentProject.tasks
-                                                .filter((task: any) => task.status === status)
-                                                .map((task: any) => (
+                                                .filter((task: Task) => task.status === status)
+                                                .map((task: Task) => (
                                                     <View key={task.id} style={styles.taskCard}>
                                                         <Text style={styles.taskTitle}>{task.title}</Text>
                                                         <Text style={styles.taskAssignee}>
@@ -291,7 +292,7 @@ export default function ScrumScreen() {
 }
 
 // Helper function
-const getNextStatus = (currentStatus: string): string => {
+const getNextStatus = (currentStatus: Task['status']): Task['status'] => {
     switch (currentStatus) {
         case 'todo': return 'in-progress';
         case 'in-progress': return 'review';

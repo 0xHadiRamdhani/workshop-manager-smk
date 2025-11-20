@@ -86,13 +86,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="square.grid.3x3.fill" color={color} />,
         }}
       />
-      <Tabs.Screen
-        name="scrum"
-        options={{
-          title: 'Scrum',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="square.grid.3x3.fill" color={color} />,
-        }}
-      />
     </Tabs>
   );
 }

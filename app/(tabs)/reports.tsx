@@ -2,11 +2,12 @@ import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Text } from '@/components/ui/Text';
 import { useStore } from '@/src/store';
+import { Report } from '@/src/types';
 import React, { useState } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 
 export default function ReportsScreen() {
-    const { reports, addReport, user } = useStore();
+    const { reports, addReport, currentUser } = useStore();
     const [selectedReportType, setSelectedReportType] = useState<'daily' | 'weekly' | 'monthly' | 'custom'>('daily');
 
     const handleGenerateReport = () => {
@@ -15,7 +16,7 @@ export default function ReportsScreen() {
             type: selectedReportType,
             title: `Laporan ${selectedReportType} - ${new Date().toLocaleDateString('id-ID')}`,
             date: new Date().toISOString(),
-            status: 'draft',
+            status: 'draft' as Report['status'],
             data: {
                 totalStudents: 45,
                 activeProjects: 12,
